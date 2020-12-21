@@ -7,9 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D47057B62591324A008F8FBA /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47057B52591324A008F8FBA /* Product.swift */; };
+		D47057BF259132BE008F8FBA /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47057BE259132BE008F8FBA /* APIService.swift */; };
+		D47057C9259134C0008F8FBA /* PrimaryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47057C8259134C0008F8FBA /* PrimaryTableViewCell.swift */; };
+		D47057CE259134D1008F8FBA /* TertiaryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47057CD259134D1008F8FBA /* TertiaryTableViewCell.swift */; };
 		D47135512591197A005C74CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47135502591197A005C74CC /* AppDelegate.swift */; };
 		D47135532591197A005C74CC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47135522591197A005C74CC /* SceneDelegate.swift */; };
-		D47135552591197A005C74CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47135542591197A005C74CC /* ViewController.swift */; };
+		D47135552591197A005C74CC /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47135542591197A005C74CC /* ProductViewController.swift */; };
 		D47135582591197A005C74CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D47135562591197A005C74CC /* Main.storyboard */; };
 		D471355A2591197B005C74CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D47135592591197B005C74CC /* Assets.xcassets */; };
 		D471355D2591197B005C74CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D471355B2591197B005C74CC /* LaunchScreen.storyboard */; };
@@ -35,10 +39,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D47057B52591324A008F8FBA /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		D47057BE259132BE008F8FBA /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		D47057C8259134C0008F8FBA /* PrimaryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryTableViewCell.swift; sourceTree = "<group>"; };
+		D47057CD259134D1008F8FBA /* TertiaryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TertiaryTableViewCell.swift; sourceTree = "<group>"; };
 		D471354D2591197A005C74CC /* SowingoChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SowingoChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D47135502591197A005C74CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D47135522591197A005C74CC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D47135542591197A005C74CC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D47135542591197A005C74CC /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
 		D47135572591197A005C74CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D47135592591197B005C74CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D471355C2591197B005C74CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -76,6 +84,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D47057B42591323B008F8FBA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D47057B52591324A008F8FBA /* Product.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D47057BD259132AC008F8FBA /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D47057BE259132BE008F8FBA /* APIService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		D47057C3259132FC008F8FBA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D47135542591197A005C74CC /* ProductViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D47057C425913306008F8FBA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D47057C8259134C0008F8FBA /* PrimaryTableViewCell.swift */,
+				D47057CD259134D1008F8FBA /* TertiaryTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		D47135442591197A005C74CC = {
 			isa = PBXGroup;
 			children = (
@@ -99,9 +140,12 @@
 		D471354F2591197A005C74CC /* SowingoChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				D47057B42591323B008F8FBA /* Models */,
+				D47057C425913306008F8FBA /* View */,
+				D47057C3259132FC008F8FBA /* Controllers */,
+				D47057BD259132AC008F8FBA /* Services */,
 				D47135502591197A005C74CC /* AppDelegate.swift */,
 				D47135522591197A005C74CC /* SceneDelegate.swift */,
-				D47135542591197A005C74CC /* ViewController.swift */,
 				D47135562591197A005C74CC /* Main.storyboard */,
 				D47135592591197B005C74CC /* Assets.xcassets */,
 				D471355B2591197B005C74CC /* LaunchScreen.storyboard */,
@@ -258,8 +302,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D47135552591197A005C74CC /* ViewController.swift in Sources */,
+				D47135552591197A005C74CC /* ProductViewController.swift in Sources */,
+				D47057BF259132BE008F8FBA /* APIService.swift in Sources */,
+				D47057CE259134D1008F8FBA /* TertiaryTableViewCell.swift in Sources */,
+				D47057B62591324A008F8FBA /* Product.swift in Sources */,
 				D47135512591197A005C74CC /* AppDelegate.swift in Sources */,
+				D47057C9259134C0008F8FBA /* PrimaryTableViewCell.swift in Sources */,
 				D47135532591197A005C74CC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
