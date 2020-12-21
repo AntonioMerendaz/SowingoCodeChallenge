@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class TertiaryTableViewCell: UITableViewCell {
     @IBOutlet weak var productImageView: UIImageView!
@@ -15,22 +16,21 @@ class TertiaryTableViewCell: UITableViewCell {
     @IBOutlet weak var listPriceValueLabel: UILabel!
     @IBOutlet weak var yourPriceValueLabel: UILabel!
     @IBOutlet weak var favoriteButtonOutlet: UIButton!
+    
     @IBAction func favoriteButtonPressed(_ sender: Any) {
+// MARK: - Put code for favorite and to POST in the WebAPI
     }
+    
     func setProduct(product: Product) {
-//        if let imageURL = product.mainImage {
-//            productImageView?.sd_setImage(with: URL(string: imageURL), placeholderImage: UIImage(named: "placeholder.png"))
-//        }
-//        else {
-//            productImageView.image = UIImage(named: "placeholder.png")
-//        }
-        
         let favImg = product.isFavouriteProduct ? "HeartFilled" : "Heart"
         favoriteButtonOutlet.setImage(UIImage(named: favImg), for: .normal)
         
-//        if let imageURL = product.mainImage {
-//            productImageView?.sd_setImage(with: URL(string: imageURL), placeholderImage: UIImage(named: "placeholder.png"))
-//        }
+        if let imageURL = product.mainImage {
+            productImageView?.sd_setImage(with: URL(string: imageURL), placeholderImage: UIImage(named: "placeholder.png"))
+        }
+        else {
+            productImageView.image = UIImage(named: "placeholder.png")
+        }
         
         bestSellerImageView.image = UIImage(named: product.advertisingBadges.badges != nil ? "bestSeller" : "white_1px")
         

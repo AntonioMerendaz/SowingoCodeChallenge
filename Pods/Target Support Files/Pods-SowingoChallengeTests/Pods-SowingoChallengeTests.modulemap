@@ -1,0 +1,6 @@
+framework module Pods_SowingoChallengeTests {
+  umbrella header "Pods-SowingoChallengeTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

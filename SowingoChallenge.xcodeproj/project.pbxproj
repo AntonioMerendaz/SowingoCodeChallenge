@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		846FE7554531DD5C6DCD9BA8 /* Pods_SowingoChallenge_SowingoChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC2BC5E0768BB29B47FB4594 /* Pods_SowingoChallenge_SowingoChallengeUITests.framework */; };
+		8892C1558C24B2D7B339CBEC /* Pods_SowingoChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BAE736AF157C99F97582E25 /* Pods_SowingoChallengeTests.framework */; };
+		9701BF8D10F35CAC9C4EB984 /* Pods_SowingoChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E41AF0D2FBBBF675AEC0E6D9 /* Pods_SowingoChallenge.framework */; };
 		D47057B62591324A008F8FBA /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47057B52591324A008F8FBA /* Product.swift */; };
 		D47057BF259132BE008F8FBA /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47057BE259132BE008F8FBA /* APIService.swift */; };
 		D47057C9259134C0008F8FBA /* PrimaryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47057C8259134C0008F8FBA /* PrimaryTableViewCell.swift */; };
@@ -39,6 +42,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D612F3B15945BF76659C748 /* Pods-SowingoChallenge-SowingoChallengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SowingoChallenge-SowingoChallengeUITests.release.xcconfig"; path = "Target Support Files/Pods-SowingoChallenge-SowingoChallengeUITests/Pods-SowingoChallenge-SowingoChallengeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		3EB9A8837ADD5026BEEB3D5E /* Pods-SowingoChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SowingoChallengeTests.debug.xcconfig"; path = "Target Support Files/Pods-SowingoChallengeTests/Pods-SowingoChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		484AF65E7A10B2ACDBD0AEA3 /* Pods-SowingoChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SowingoChallenge.release.xcconfig"; path = "Target Support Files/Pods-SowingoChallenge/Pods-SowingoChallenge.release.xcconfig"; sourceTree = "<group>"; };
+		51DC42D397AF5CDA9ED0FF8C /* Pods-SowingoChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SowingoChallengeTests.release.xcconfig"; path = "Target Support Files/Pods-SowingoChallengeTests/Pods-SowingoChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
+		590F9742DC77DF162F8F44F6 /* Pods-SowingoChallenge-SowingoChallengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SowingoChallenge-SowingoChallengeUITests.debug.xcconfig"; path = "Target Support Files/Pods-SowingoChallenge-SowingoChallengeUITests/Pods-SowingoChallenge-SowingoChallengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8BAE736AF157C99F97582E25 /* Pods_SowingoChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SowingoChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC2BC5E0768BB29B47FB4594 /* Pods_SowingoChallenge_SowingoChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SowingoChallenge_SowingoChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D47057B52591324A008F8FBA /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		D47057BE259132BE008F8FBA /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		D47057C8259134C0008F8FBA /* PrimaryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryTableViewCell.swift; sourceTree = "<group>"; };
@@ -57,6 +67,8 @@
 		D471356E2591197C005C74CC /* SowingoChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SowingoChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D47135722591197C005C74CC /* SowingoChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SowingoChallengeUITests.swift; sourceTree = "<group>"; };
 		D47135742591197C005C74CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E41AF0D2FBBBF675AEC0E6D9 /* Pods_SowingoChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SowingoChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3C36EA38707A029E4A7782B /* Pods-SowingoChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SowingoChallenge.debug.xcconfig"; path = "Target Support Files/Pods-SowingoChallenge/Pods-SowingoChallenge.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9701BF8D10F35CAC9C4EB984 /* Pods_SowingoChallenge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8892C1558C24B2D7B339CBEC /* Pods_SowingoChallengeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,12 +92,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				846FE7554531DD5C6DCD9BA8 /* Pods_SowingoChallenge_SowingoChallengeUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		883C74368CE410E0261D041C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F3C36EA38707A029E4A7782B /* Pods-SowingoChallenge.debug.xcconfig */,
+				484AF65E7A10B2ACDBD0AEA3 /* Pods-SowingoChallenge.release.xcconfig */,
+				590F9742DC77DF162F8F44F6 /* Pods-SowingoChallenge-SowingoChallengeUITests.debug.xcconfig */,
+				0D612F3B15945BF76659C748 /* Pods-SowingoChallenge-SowingoChallengeUITests.release.xcconfig */,
+				3EB9A8837ADD5026BEEB3D5E /* Pods-SowingoChallengeTests.debug.xcconfig */,
+				51DC42D397AF5CDA9ED0FF8C /* Pods-SowingoChallengeTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BD2605118663A413AF7C1DA3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E41AF0D2FBBBF675AEC0E6D9 /* Pods_SowingoChallenge.framework */,
+				BC2BC5E0768BB29B47FB4594 /* Pods_SowingoChallenge_SowingoChallengeUITests.framework */,
+				8BAE736AF157C99F97582E25 /* Pods_SowingoChallengeTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D47057B42591323B008F8FBA /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -124,6 +163,8 @@
 				D47135662591197B005C74CC /* SowingoChallengeTests */,
 				D47135712591197C005C74CC /* SowingoChallengeUITests */,
 				D471354E2591197A005C74CC /* Products */,
+				883C74368CE410E0261D041C /* Pods */,
+				BD2605118663A413AF7C1DA3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -179,9 +220,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D47135772591197C005C74CC /* Build configuration list for PBXNativeTarget "SowingoChallenge" */;
 			buildPhases = (
+				3136C4109C0CE376B3131EC8 /* [CP] Check Pods Manifest.lock */,
 				D47135492591197A005C74CC /* Sources */,
 				D471354A2591197A005C74CC /* Frameworks */,
 				D471354B2591197A005C74CC /* Resources */,
+				A62FB6E447CC0A2633037131 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -196,6 +239,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D471357A2591197C005C74CC /* Build configuration list for PBXNativeTarget "SowingoChallengeTests" */;
 			buildPhases = (
+				E9C1544D656E0888CCE4326B /* [CP] Check Pods Manifest.lock */,
 				D471355F2591197B005C74CC /* Sources */,
 				D47135602591197B005C74CC /* Frameworks */,
 				D47135612591197B005C74CC /* Resources */,
@@ -214,9 +258,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D471357D2591197C005C74CC /* Build configuration list for PBXNativeTarget "SowingoChallengeUITests" */;
 			buildPhases = (
+				8D733CCB5BA79D5F87DB3B6B /* [CP] Check Pods Manifest.lock */,
 				D471356A2591197C005C74CC /* Sources */,
 				D471356B2591197C005C74CC /* Frameworks */,
 				D471356C2591197C005C74CC /* Resources */,
+				B816A088C5A6483963740659 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -296,6 +342,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3136C4109C0CE376B3131EC8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SowingoChallenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8D733CCB5BA79D5F87DB3B6B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SowingoChallenge-SowingoChallengeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A62FB6E447CC0A2633037131 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SowingoChallenge/Pods-SowingoChallenge-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SowingoChallenge/Pods-SowingoChallenge-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SowingoChallenge/Pods-SowingoChallenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B816A088C5A6483963740659 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SowingoChallenge-SowingoChallengeUITests/Pods-SowingoChallenge-SowingoChallengeUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SowingoChallenge-SowingoChallengeUITests/Pods-SowingoChallenge-SowingoChallengeUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SowingoChallenge-SowingoChallengeUITests/Pods-SowingoChallenge-SowingoChallengeUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9C1544D656E0888CCE4326B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SowingoChallengeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D47135492591197A005C74CC /* Sources */ = {
@@ -481,6 +630,7 @@
 		};
 		D47135782591197C005C74CC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3C36EA38707A029E4A7782B /* Pods-SowingoChallenge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -500,6 +650,7 @@
 		};
 		D47135792591197C005C74CC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 484AF65E7A10B2ACDBD0AEA3 /* Pods-SowingoChallenge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -519,6 +670,7 @@
 		};
 		D471357B2591197C005C74CC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EB9A8837ADD5026BEEB3D5E /* Pods-SowingoChallengeTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -541,6 +693,7 @@
 		};
 		D471357C2591197C005C74CC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51DC42D397AF5CDA9ED0FF8C /* Pods-SowingoChallengeTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -563,6 +716,7 @@
 		};
 		D471357E2591197C005C74CC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 590F9742DC77DF162F8F44F6 /* Pods-SowingoChallenge-SowingoChallengeUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -583,6 +737,7 @@
 		};
 		D471357F2591197C005C74CC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D612F3B15945BF76659C748 /* Pods-SowingoChallenge-SowingoChallengeUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
