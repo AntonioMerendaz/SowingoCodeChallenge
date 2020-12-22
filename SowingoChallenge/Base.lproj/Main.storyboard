@@ -277,7 +277,13 @@
                             <constraint firstItem="OcS-Qy-VwA" firstAttribute="leading" secondItem="g2Q-9m-iQP" secondAttribute="leading" id="sAr-Md-XYP"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="ATJ-SV-mLg"/>
+                    <navigationItem key="navigationItem" id="ATJ-SV-mLg">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="FilterBlue" id="c9E-4V-5K6">
+                            <connections>
+                                <action selector="filterButtonPressed:" destination="mVH-Fg-vx9" id="ce5-Jr-OZe"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="searchBar" destination="HaE-Tp-hjR" id="NwA-ZM-Jem"/>
                         <outlet property="tableView" destination="OcS-Qy-VwA" id="ZGA-cd-zCp"/>
@@ -309,6 +315,7 @@
     </scenes>
     <resources>
         <image name="Ellipse" width="40" height="40"/>
+        <image name="FilterBlue" width="22" height="20"/>
         <image name="Heart" width="24" height="22"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

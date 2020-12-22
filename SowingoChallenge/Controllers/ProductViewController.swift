@@ -20,21 +20,19 @@ class ProductViewController: UIViewController {
     private var apiService: APIService!
     private var prodData: Products!
     private var prodDataFiltered: [Product]!
+    private var prodFavActive: [Product]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         initialSetup()
-        
         self.apiService =  APIService()
         fetchProductsData()
-        
         hideKeyboardWhenTappedAround()
-        
     }
     
     func initialSetup() {
-        self.searchBar.delegate = self
         self.title = "Products"
+        self.searchBar.delegate = self
         self.tableView.refreshControl = refresher
         self.tableView.keyboardDismissMode = .onDrag
     }
@@ -49,11 +47,24 @@ class ProductViewController: UIViewController {
             (prodData) in
             self.prodData = prodData
             self.prodDataFiltered = prodData.hits
+            self.prodFavActive = prodData.hits
             DispatchQueue.main.async { [weak self] in
                 self?.tableView.reloadData()
                 self?.refresher.endRefreshing()
             }
         }
+    }
+    
+    //MARK - IBActions
+    @IBAction func filterButtonPressed(_ sender: UIBarButtonItem) {
+        prodFavActive = []
+        for prod in prodDataFiltered {
+            if prod.isFavouriteProduct {
+                prodFavActive.append(prod)
+            }
+        }
+        self.prodDataFiltered = prodFavActive
+        self.tableView.reloadData()
     }
 }
 
