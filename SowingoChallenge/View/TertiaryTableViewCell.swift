@@ -18,7 +18,6 @@ class TertiaryTableViewCell: UITableViewCell {
     @IBOutlet weak var favoriteButtonOutlet: UIButton!
     
     func setProduct(product: Product) {
-//        self.prod = product
         let favImg = product.isFavouriteProduct ? "HeartFilled" : "Heart"
         favoriteButtonOutlet.setImage(UIImage(named: favImg), for: .normal)
         
@@ -33,7 +32,10 @@ class TertiaryTableViewCell: UITableViewCell {
         
         productNameLabel.text = product.subcategory.name
         manufacturerNameLabel.text = product.manufacturer.name
-        listPriceValueLabel?.text = String(product.vendorInventory.first?.listPrice ?? 0)
+        if let vendor = product.vendorInventory.first {
+            listPriceValueLabel.attributedText = NSAttributedString(string: "$\(vendor.listPrice)").withStrikeThrough(1)
+            listPriceValueLabel.text = "$\(vendor.listPrice)"
+        }
         yourPriceValueLabel?.text = String(product.vendorInventory.first?.price ?? 0)
     }
 }
