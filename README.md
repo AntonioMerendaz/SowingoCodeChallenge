@@ -20,4 +20,4 @@ favourite default)
 #### Model-View-Controller (MVC)
 Despite its obvious disadvantages, in relation to other architectures, such as MVVM, MVP, etc., I chose to use it as a matter of time limit to solve the problem presented. If there is time, I will refactor the code for use with MVVM.
 
-To prevent the Massive View Controller, dumping code like that related to accessing the network for consumption of WebAPI and formatting data in the Controller, this was done seeking the best possible separation of concerns, doing the task of refactoring to MVVM and adding Unit The tests become much simpler.
+In order to prevent the Massive View Controller, pouring pieces of code into the Controller, such as the one related to accessing the network for consumption of WebAPI and data formatting, this implementation was done seeking the best possible separation of concerns, making the task of refactoring for MVVM and adding unit Testing becomes much simpler.
