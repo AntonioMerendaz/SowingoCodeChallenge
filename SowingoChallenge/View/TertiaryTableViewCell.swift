@@ -34,10 +34,13 @@ class TertiaryTableViewCell: UITableViewCell {
         productNameLabel.text = product.subcategory.name
         manufacturerNameLabel.text = product.manufacturer.name
         if let vendor = product.vendorInventory.first {
-            listPriceValueLabel.attributedText = NSAttributedString(string: "$\(vendor.listPrice)").withStrikeThrough(1)
-            listPriceValueLabel.text = "$\(vendor.listPrice)"
+            listPriceValueLabel.attributedText = NSAttributedString(string: "\(vendor.listPrice.asLocaleCurrency)").withStrikeThrough(1)
+            listPriceValueLabel.text = "\(vendor.listPrice.asLocaleCurrency)"
         }
-        yourPriceValueLabel?.text = String(product.vendorInventory.first?.price ?? 0)
+        
+        if let vendor = product.vendorInventory.first {
+            yourPriceValueLabel.text = "\(vendor.price.asLocaleCurrency)"
+        }
     }
     
     func setupViews() {

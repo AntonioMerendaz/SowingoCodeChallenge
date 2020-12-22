@@ -263,7 +263,7 @@
                             </tableView>
                             <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="HaE-Tp-hjR">
                                 <rect key="frame" x="0.0" y="89" width="414" height="56"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
                             </searchBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="g2Q-9m-iQP"/>

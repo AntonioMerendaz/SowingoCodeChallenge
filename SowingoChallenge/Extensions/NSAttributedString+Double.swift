@@ -19,3 +19,13 @@ extension NSAttributedString {
          return NSAttributedString(attributedString: attributedString)
      }
 }
+// Create a string with currency formatting based on the device locale
+//
+extension Double {
+    var asLocaleCurrency:String {
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .currency
+        formatter.locale = NSLocale.current
+        return formatter.string(from: NSNumber(value: self))!
+    }
+}

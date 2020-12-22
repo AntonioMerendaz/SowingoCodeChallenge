@@ -10,7 +10,7 @@
 		846FE7554531DD5C6DCD9BA8 /* Pods_SowingoChallenge_SowingoChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC2BC5E0768BB29B47FB4594 /* Pods_SowingoChallenge_SowingoChallengeUITests.framework */; };
 		8892C1558C24B2D7B339CBEC /* Pods_SowingoChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BAE736AF157C99F97582E25 /* Pods_SowingoChallengeTests.framework */; };
 		9701BF8D10F35CAC9C4EB984 /* Pods_SowingoChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E41AF0D2FBBBF675AEC0E6D9 /* Pods_SowingoChallenge.framework */; };
-		D46E60002591F1A000439A13 /* NSAttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46E5FFF2591F1A000439A13 /* NSAttributedString.swift */; };
+		D46E60002591F1A000439A13 /* NSAttributedString+Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46E5FFF2591F1A000439A13 /* NSAttributedString+Double.swift */; };
 		D46E60062591FC9700439A13 /* ConstantsEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46E60052591FC9700439A13 /* ConstantsEnum.swift */; };
 		D47057B62591324A008F8FBA /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47057B52591324A008F8FBA /* Product.swift */; };
 		D47057BF259132BE008F8FBA /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47057BE259132BE008F8FBA /* APIService.swift */; };
@@ -51,7 +51,7 @@
 		590F9742DC77DF162F8F44F6 /* Pods-SowingoChallenge-SowingoChallengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SowingoChallenge-SowingoChallengeUITests.debug.xcconfig"; path = "Target Support Files/Pods-SowingoChallenge-SowingoChallengeUITests/Pods-SowingoChallenge-SowingoChallengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		8BAE736AF157C99F97582E25 /* Pods_SowingoChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SowingoChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC2BC5E0768BB29B47FB4594 /* Pods_SowingoChallenge_SowingoChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SowingoChallenge_SowingoChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D46E5FFF2591F1A000439A13 /* NSAttributedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSAttributedString.swift; sourceTree = "<group>"; };
+		D46E5FFF2591F1A000439A13 /* NSAttributedString+Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+Double.swift"; sourceTree = "<group>"; };
 		D46E60052591FC9700439A13 /* ConstantsEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantsEnum.swift; sourceTree = "<group>"; };
 		D47057B52591324A008F8FBA /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		D47057BE259132BE008F8FBA /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
@@ -129,7 +129,7 @@
 		D46E5FFE2591F16800439A13 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				D46E5FFF2591F1A000439A13 /* NSAttributedString.swift */,
+				D46E5FFF2591F1A000439A13 /* NSAttributedString+Double.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -476,7 +476,7 @@
 				D47135552591197A005C74CC /* ProductViewController.swift in Sources */,
 				D47057BF259132BE008F8FBA /* APIService.swift in Sources */,
 				D47057CE259134D1008F8FBA /* TertiaryTableViewCell.swift in Sources */,
-				D46E60002591F1A000439A13 /* NSAttributedString.swift in Sources */,
+				D46E60002591F1A000439A13 /* NSAttributedString+Double.swift in Sources */,
 				D47057B62591324A008F8FBA /* Product.swift in Sources */,
 				D47135512591197A005C74CC /* AppDelegate.swift in Sources */,
 				D47057C9259134C0008F8FBA /* PrimaryTableViewCell.swift in Sources */,
