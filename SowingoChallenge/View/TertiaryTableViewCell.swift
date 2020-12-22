@@ -18,6 +18,7 @@ class TertiaryTableViewCell: UITableViewCell {
     @IBOutlet weak var favoriteButtonOutlet: UIButton!
     
     func setProduct(product: Product) {
+        setupViews()
         let favImg = product.isFavouriteProduct ? "HeartFilled" : "Heart"
         favoriteButtonOutlet.setImage(UIImage(named: favImg), for: .normal)
         
@@ -37,5 +38,12 @@ class TertiaryTableViewCell: UITableViewCell {
             listPriceValueLabel.text = "$\(vendor.listPrice)"
         }
         yourPriceValueLabel?.text = String(product.vendorInventory.first?.price ?? 0)
+    }
+    
+    func setupViews() {
+        contentView.backgroundColor = .white
+        contentView.layer.borderWidth = 1
+        contentView.layer.borderColor = CGColor(gray: 0.6, alpha: 1)
+        contentView.layer.cornerRadius = 10
     }
 }

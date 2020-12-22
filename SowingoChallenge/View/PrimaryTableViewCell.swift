@@ -42,14 +42,12 @@ class PrimaryTableViewCell: UITableViewCell {
     }
     
     func setupViews() {
-//        contentView.backgroundColor = .white
-//                contentView.layer.borderWidth = 1
-//                contentView.layer.borderColor = CGColor(gray: 0.3, alpha: 1)
-//                contentView.layer.cornerRadius = 10
-//        contentView.layer.shadowOffset = CGSize(width: 2, height: 2)
-//        contentView.layer.shadowColor = CGColor(gray: 0, alpha: 1)
-        self.productImageView.layer.borderWidth = 1
-        self.productImageView.layer.borderColor = CGColor(gray: 0.6, alpha: 1)
-        self.productImageView.layer.cornerRadius = 10
+        contentView.backgroundColor = .white
+        contentView.layer.borderWidth = 1
+        contentView.layer.borderColor = CGColor(gray: 0.6, alpha: 1)
+        contentView.layer.cornerRadius = 10
+        productImageView.layer.borderWidth = 1
+        productImageView.layer.borderColor = CGColor(gray: 0.6, alpha: 1)
+        productImageView.layer.cornerRadius = 10
     }
 }

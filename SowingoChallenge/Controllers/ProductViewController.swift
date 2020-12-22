@@ -83,7 +83,7 @@ extension ProductViewController: UITableViewDelegate, UITableViewDataSource, UIS
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        prodData.hits[indexPath.row].isFavouriteProduct = !prodData.hits[indexPath.row].isFavouriteProduct
+        prodDataFiltered[indexPath.row].isFavouriteProduct = !prodDataFiltered[indexPath.row].isFavouriteProduct
         self.tableView.reloadData()
     }
     
