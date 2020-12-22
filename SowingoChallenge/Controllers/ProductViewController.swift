@@ -10,16 +10,26 @@ import UIKit
 class ProductViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
+    lazy var refresher: UIRefreshControl = {
+        let refreshControl = UIRefreshControl()
+        refreshControl.tintColor = .darkGray
+        refreshControl.addTarget(self, action: #selector(requestData), for: .valueChanged)
+        return refreshControl
+    }()
     private var apiService : APIService!
     private var prodData : Products!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-//        tableView.layer.cornerRadius = 10
         self.apiService =  APIService()
         fetchProductsData()
         self.title = "Products"
-        
+        tableView.refreshControl = refresher
+    }
+    
+    @objc
+    func requestData() {
+        fetchProductsData()
     }
     
     func fetchProductsData() {
@@ -28,6 +38,7 @@ class ProductViewController: UIViewController {
             self.prodData = prodData
             DispatchQueue.main.async { [weak self] in
                 self?.tableView.reloadData()
+                self?.refresher.endRefreshing()
             }
         }
     }
@@ -40,9 +51,9 @@ extension ProductViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if indexPath.row < 3 {
-            return 334
+            return 336
         } else {
-            return 159
+            return 161
         }
     }
     
@@ -53,7 +64,9 @@ extension ProductViewController: UITableViewDelegate, UITableViewDataSource {
                 if self.prodData != nil {
                     cell.setProduct(product: product)
                 }
-                
+                let backgroundView = UIView()
+                backgroundView.backgroundColor = UIColor.clear
+                cell.selectedBackgroundView = backgroundView
                 return cell
             }
             else {
@@ -64,4 +77,11 @@ extension ProductViewController: UITableViewDelegate, UITableViewDataSource {
         }
         return UITableViewCell()
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        prodData.hits[indexPath.row].isFavouriteProduct = !prodData.hits[indexPath.row].isFavouriteProduct
+        self.tableView.reloadData()
+    }
 }
+
+

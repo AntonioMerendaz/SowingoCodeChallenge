@@ -9,7 +9,7 @@ import Foundation
 
 // MARK: - Products
 struct Products: Codable {
-    let hits: [Product]
+    var hits: [Product]
 }
 
 // MARK: - Product
@@ -27,7 +27,7 @@ struct Product: Codable {
     let vendorInventory: [VendorInventoryElement]
     let countryID: CountryID
     let trackingMethod: String?
-    let isFavouriteProduct: Bool
+    var isFavouriteProduct: Bool
     let advertisingBadges: AdvertisingBadges
     let orderPackageQuantity: Int?
     let hitDescription: String
