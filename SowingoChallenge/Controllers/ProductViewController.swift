@@ -23,12 +23,19 @@ class ProductViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        searchBar.delegate = self
+        initialSetup()
+        
         self.apiService =  APIService()
         fetchProductsData()
-        self.title = "Products"
-        tableView.refreshControl = refresher
+        
         hideKeyboardWhenTappedAround()
+        
+    }
+    
+    func initialSetup() {
+        self.searchBar.delegate = self
+        self.title = "Products"
+        self.tableView.refreshControl = refresher
         self.tableView.keyboardDismissMode = .onDrag
     }
     
@@ -109,7 +116,6 @@ extension ProductViewController: UITableViewDelegate, UITableViewDataSource, UIS
 }
 
 extension UIViewController {
-
     func hideKeyboardWhenTappedAround() {
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard(_:)))
         tap.cancelsTouchesInView = false
