@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="OcS-Qy-VwA">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <rect key="frame" x="0.0" y="142" width="414" height="720"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PrimaryTableViewCell" rowHeight="334" id="hfw-gH-b6c" customClass="PrimaryTableViewCell" customModule="SowingoChallenge" customModuleProvider="target">
@@ -261,18 +261,26 @@
                                     <outlet property="delegate" destination="mVH-Fg-vx9" id="VNx-d0-a2d"/>
                                 </connections>
                             </tableView>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="HaE-Tp-hjR">
+                                <rect key="frame" x="0.0" y="89" width="414" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="g2Q-9m-iQP"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="HaE-Tp-hjR" firstAttribute="top" secondItem="g2Q-9m-iQP" secondAttribute="top" constant="1" id="1Fj-eM-6Eg"/>
+                            <constraint firstItem="HaE-Tp-hjR" firstAttribute="leading" secondItem="g2Q-9m-iQP" secondAttribute="leading" id="Ebp-ax-Rf3"/>
                             <constraint firstItem="OcS-Qy-VwA" firstAttribute="trailing" secondItem="g2Q-9m-iQP" secondAttribute="trailing" id="Vac-BP-hTb"/>
                             <constraint firstItem="OcS-Qy-VwA" firstAttribute="bottom" secondItem="g2Q-9m-iQP" secondAttribute="bottom" id="Zf7-rm-rZp"/>
-                            <constraint firstItem="OcS-Qy-VwA" firstAttribute="top" secondItem="g2Q-9m-iQP" secondAttribute="top" id="orM-iK-MvD"/>
+                            <constraint firstItem="OcS-Qy-VwA" firstAttribute="top" secondItem="g2Q-9m-iQP" secondAttribute="top" constant="54" id="orM-iK-MvD"/>
+                            <constraint firstItem="HaE-Tp-hjR" firstAttribute="trailing" secondItem="g2Q-9m-iQP" secondAttribute="trailing" id="q9E-Jz-QwW"/>
                             <constraint firstItem="OcS-Qy-VwA" firstAttribute="leading" secondItem="g2Q-9m-iQP" secondAttribute="leading" id="sAr-Md-XYP"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ATJ-SV-mLg"/>
                     <connections>
+                        <outlet property="searchBar" destination="HaE-Tp-hjR" id="NwA-ZM-Jem"/>
                         <outlet property="tableView" destination="OcS-Qy-VwA" id="ZGA-cd-zCp"/>
                     </connections>
                 </viewController>

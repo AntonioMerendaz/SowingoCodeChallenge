@@ -9,6 +9,7 @@ import UIKit
 
 class ProductViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var searchBar: UISearchBar!
     
     lazy var refresher: UIRefreshControl = {
         let refreshControl = UIRefreshControl()
@@ -16,11 +17,13 @@ class ProductViewController: UIViewController {
         refreshControl.addTarget(self, action: #selector(requestData), for: .valueChanged)
         return refreshControl
     }()
-    private var apiService : APIService!
-    private var prodData : Products!
-
+    private var apiService: APIService!
+    private var prodData: Products!
+    private var prodDataFiltered: [Product]!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        searchBar.delegate = self
         self.apiService =  APIService()
         fetchProductsData()
         self.title = "Products"
@@ -36,6 +39,7 @@ class ProductViewController: UIViewController {
         self.apiService.fetchFromServer {
             (prodData) in
             self.prodData = prodData
+            self.prodDataFiltered = prodData.hits
             DispatchQueue.main.async { [weak self] in
                 self?.tableView.reloadData()
                 self?.refresher.endRefreshing()
@@ -44,21 +48,21 @@ class ProductViewController: UIViewController {
     }
 }
 
-extension ProductViewController: UITableViewDelegate, UITableViewDataSource {
+extension ProductViewController: UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.prodData?.hits.count ?? 0
+        return self.prodDataFiltered?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if indexPath.row < 3 {
-            return 336
+            return ConstantsEnum.cardPrimaryRowHeight
         } else {
-            return 161
+            return ConstantsEnum.cardTertiaryRowHeight
         }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if let product = prodData?.hits[indexPath.row] {
+        if let product = prodDataFiltered?[indexPath.row] {
             if indexPath.row < 3 {
                 let cell = tableView.dequeueReusableCell(withIdentifier: "PrimaryTableViewCell") as! PrimaryTableViewCell
                 if self.prodData != nil {
@@ -80,6 +84,20 @@ extension ProductViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         prodData.hits[indexPath.row].isFavouriteProduct = !prodData.hits[indexPath.row].isFavouriteProduct
+        self.tableView.reloadData()
+    }
+    
+    //MARK: Search Bar config:
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        prodDataFiltered = []
+        if searchText == "" {
+            prodDataFiltered = prodData.hits
+        }
+        for prod in prodData.hits {
+            if prod.subcategory.name.lowercased().contains(searchText.lowercased()) {
+                prodDataFiltered.append(prod)
+            }
+        }
         self.tableView.reloadData()
     }
 }
