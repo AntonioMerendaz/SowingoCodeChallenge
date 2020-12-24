@@ -93,7 +93,7 @@
                                                     <color key="textColor" red="0.13725490200000001" green="0.1843137255" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KWX-fM-8s6">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KWX-fM-8s6">
                                                     <rect key="frame" x="364" y="10" width="40" height="40"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="KWX-fM-8s6" secondAttribute="height" multiplier="40:40" id="Iw1-4E-7vs"/>
@@ -213,7 +213,7 @@
                                                         <constraint firstAttribute="width" constant="97" id="OEA-yo-AaP"/>
                                                     </constraints>
                                                 </imageView>
-                                                <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pq5-J5-hI4">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pq5-J5-hI4">
                                                     <rect key="frame" x="8" y="8" width="40" height="40"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="40" id="Qr0-XG-d13"/>

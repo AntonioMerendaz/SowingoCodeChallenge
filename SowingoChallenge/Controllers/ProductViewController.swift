@@ -85,6 +85,8 @@ extension ProductViewController: UITableViewDelegate, UITableViewDataSource, UIS
         if let product = prodDataFiltered?[indexPath.row] {
             if indexPath.row < 3 {
                 let cell = tableView.dequeueReusableCell(withIdentifier: "PrimaryTableViewCell") as! PrimaryTableViewCell
+                cell.favoriteButtonOutlet.tag = indexPath.row
+                cell.favoriteButtonOutlet.addTarget(self, action: #selector(ProductViewController.favoriteButtonTapped(_:)), for: .touchUpInside)
                 if self.prodData != nil {
                     cell.setProduct(product: product)
                 }
@@ -95,6 +97,8 @@ extension ProductViewController: UITableViewDelegate, UITableViewDataSource, UIS
             }
             else {
             let cell = tableView.dequeueReusableCell(withIdentifier: "TertiaryTableViewCell") as! TertiaryTableViewCell
+                cell.favoriteButtonOutlet.tag = indexPath.row
+                cell.favoriteButtonOutlet.addTarget(self, action: #selector(ProductViewController.favoriteButtonTapped(_:)), for: .touchUpInside)
                 cell.setProduct(product: product)
             return cell
             }
@@ -102,9 +106,10 @@ extension ProductViewController: UITableViewDelegate, UITableViewDataSource, UIS
         return UITableViewCell()
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        prodDataFiltered[indexPath.row].isFavouriteProduct = !prodDataFiltered[indexPath.row].isFavouriteProduct
+    @objc func favoriteButtonTapped(_ sender: UIButton!) {
+        prodDataFiltered[sender.tag].isFavouriteProduct = !prodDataFiltered[sender.tag].isFavouriteProduct
         self.tableView.reloadData()
+//        self.apiService.postOnServer()
     }
     
     //MARK: Search Bar config:
